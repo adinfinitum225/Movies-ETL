@@ -1,2 +1,4 @@
+config.py
+.ipynb*
+__*
 data/
-.ipynb_*
