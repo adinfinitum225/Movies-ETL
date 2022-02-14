@@ -16,7 +16,7 @@ The kaggle_metadata a ratings files were downloaded in csv format from [Kaggle](
 
 ### Transform
 
-Most of the cleaning had to be done on the wikipedia data. Since it was data from a web scrape it was messy, and had many columns with different names for the same information. in our [ETL_clean_wiki_movies.ipynb](ETL_clean_movies.ipynb) file we created a function `extract_transform_load()` to read in the data and begine cleaning it. TV shows were removed from the wiki data, columns were renamed to be consistent, duplicate entries were dropped, and data was transformed into a consistent format.
+Most of the cleaning had to be done on the wikipedia data. Since it was data from a web scrape it was messy, and had many columns with different names for the same information. in our [ETL_clean_wiki_movies.ipynb](ETL_clean_wiki_movies.ipynb) file we created a function `extract_transform_load()` to read in the data and begine cleaning it. TV shows were removed from the wiki data, columns were renamed to be consistent, duplicate entries were dropped, and data was transformed into a consistent format.
 
 The kaggle data was already fairly clean, and in [ETL_clean_kaggle_data.ipynb](ETL_clean_kaggle_data.ipynb) we had to transform the values of some of the columns into the proper data type. Then we merged the kaggle data with the wiki data in a way that preserved the most useful information.
 
